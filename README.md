@@ -15,8 +15,7 @@ A premium AI-powered mobile application for Android and iPhone that analyzes clo
 - 🎨 **Theme Support** - Light, Dark, and System themes
 
 ### Analysis Metrics
-- Fabric type identification
-- Confidence percentage
+- Fabric type identification with confidence scores
 - Fabric blend analysis
 - Breathability, comfort, softness ratings
 - Durability and stretch levels
@@ -24,28 +23,46 @@ A premium AI-powered mobile application for Android and iPhone that analyzes clo
 - Skin-friendliness and sustainability scores
 - Quality level assessment
 - Care instructions (washing, drying, ironing, storage)
-- Estimated lifespan
-- Environmental impact
+- Estimated lifespan and environmental impact
 - Weather suitability recommendations
 - Occasion suggestions
+
+## Premium UI Features
+- Material Design 3 components
+- Glassmorphism effects
+- Smooth animations and transitions
+- Beautiful gradient designs
+- Rounded card layouts
+- Professional typography
 
 ## Tech Stack
 
 ### Frontend
 - React Native / Flutter with TypeScript
-- Material Design 3 components
-- Redux / Provider for state management
-- Firebase for backend services
+- Material Design 3
+- Redux / Provider state management
+- Firebase services
 
 ### Backend
 - Node.js with Express
-- MongoDB for database
+- MongoDB database
 - Firebase Authentication
-- Google Cloud ML for AI analysis
+- Image processing with TensorFlow.js
 
 ## Getting Started
 
 See SETUP.md for detailed installation instructions.
+
+## Project Structure
+
+```
+fabriclens-ai/
+├── mobile/                  # React Native/Flutter app
+├── backend/                 # Node.js API server
+├── ml/                      # ML models and inference
+├── docs/                    # Documentation
+└── .github/                 # CI/CD workflows
+```
 
 ## License
 
