@@ -1,39 +1,5 @@
-# Dependencies
 node_modules/
-/.pnp
-.pnp.js
-
-# Testing
-/coverage
-
-# Production
-/build
-/dist
-
-# Environment
 .env
-.env.local
-.env.*.local
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
 .DS_Store
-
-# Mobile
-ios/Pods/
-ios/Podfile.lock
-android/.gradle/
-android/build/
-
-# Logs
-logs/
-*.log
-npm-debug.log*
-
-# OS
-Thumbs.db
-.DS_Store
+build/
+dist/
