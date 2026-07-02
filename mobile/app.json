@@ -1,5 +1,10 @@
 {
-  "expo": {
+  "expo": {"extra": {
+"eas": {
+"projectId": "YAHAN_APNA_PROJECT_ID_PAST
+}
+"owner"
+: "gjhgjbb129-source"
     "name": "FabricLens AI",
     "slug": "fabriclens-ai",
     "version": "1.0.0",
