@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "FabricLens AI",
+    "slug": "fabriclens-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.fabriclens.ai"
+    },
+    "ios": {
+      "bundleIdentifier": "com.fabriclens.ai"
+    }
+  }
+}
