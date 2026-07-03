@@ -4,13 +4,7 @@
     "slug": "fabric-lens-ai",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#000000"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -18,17 +12,13 @@
       "supportsTabletMode": true,
       "bundleIdentifier": "com.fabriclens.ai",
       "infoPlist": {
-        "NSCameraUsageDescription": "FabricLens AI needs access to your camera to scan fabrics.",
-        "NSPhotoLibraryUsageDescription": "FabricLens AI needs access to your photo library.",
-        "NSPhotoLibraryAddUsageDescription": "FabricLens AI needs to save photos to your library."
+        "NSCameraUsageDescription": "FabricLens needs camera access to scan fabric",
+        "NSPhotoLibraryUsageDescription": "FabricLens needs photo access to select images",
+        "NSPhotoLibraryAddUsageDescription": "FabricLens needs permission to save images"
       }
     },
     "android": {
       "package": "com.fabriclens.ai",
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#000000"
-      },
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
@@ -37,29 +27,26 @@
         "ACCESS_COARSE_LOCATION"
       ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
     "plugins": [
       [
         "expo-camera",
         {
-          "cameraPermission": "Allow FabricLens AI to access your camera to scan fabrics.",
-          "microphonePermission": "Allow FabricLens AI to access your microphone."
+          "cameraPermission": "Allow FabricLens to access your camera",
+          "microphonePermission": "Allow FabricLens to access your microphone"
         }
       ],
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow FabricLens AI to access your photos.",
-          "cameraPermission": "Allow FabricLens AI to access your camera."
+          "photosPermission": "Allow FabricLens to access your photos",
+          "cameraPermission": "Allow FabricLens to access your camera"
         }
       ],
       [
         "expo-media-library",
         {
-          "photosPermission": "Allow FabricLens AI to access your photos.",
-          "savePhotosPermission": "Allow FabricLens AI to save photos.",
+          "photosPermission": "Allow FabricLens to access your photos",
+          "savePhotosPermission": "Allow FabricLens to save photos",
           "isAccessMediaLocationEnabled": true
         }
       ]
