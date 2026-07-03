@@ -4,19 +4,76 @@
     "slug": "fabric-lens-ai",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "android": {
-      "package": "com.fabriclens.ai"
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "bundleIdentifier": "com.fabriclens.ai"
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.fabriclens.ai",
+      "infoPlist": {
+        "NSCameraUsageDescription": "FabricLens AI needs access to your camera to scan fabrics.",
+        "NSPhotoLibraryUsageDescription": "FabricLens AI needs access to your photo library.",
+        "NSPhotoLibraryAddUsageDescription": "FabricLens AI needs to save photos to your library."
+      }
     },
-    "platforms": ["ios", "android"],
+    "android": {
+      "package": "com.fabriclens.ai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow FabricLens AI to access your camera to scan fabrics.",
+          "microphonePermission": "Allow FabricLens AI to access your microphone."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow FabricLens AI to access your photos.",
+          "cameraPermission": "Allow FabricLens AI to access your camera."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow FabricLens AI to access your photos.",
+          "savePhotosPermission": "Allow FabricLens AI to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "c009566a-4747-41ff-9339-7140eac86286"
       }
     },
-    "owner": "gjhgjbb129"
+    "owner": "gjhgjbb129",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ]
   }
 }
